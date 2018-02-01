@@ -2,5 +2,5 @@
 Experimenting with the Realm Database for Android
 
 
-![App Gif](https://giphy.com/gifs/android-database-realm-3o7WIGfX4FgFyUdpv2)
+![](https://giphy.com/gifs/android-database-realm-3o7WIGfX4FgFyUdpv2.gif)
 
