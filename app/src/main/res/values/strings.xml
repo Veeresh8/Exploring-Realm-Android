@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Realm Example</string>
+    <string name="fetching_records_please_wait">Fetching Records, Please Wait</string>
+    <string name="fav">Favorites</string>
+    <string name="sort">Sort By</string>
+    <string name="no_fav">No Favourites Found</string>
+</resources>

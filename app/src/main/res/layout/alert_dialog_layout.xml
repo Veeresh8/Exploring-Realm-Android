@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical">
+
+    <veeresh.a3c.realm.utilities.MyCustomTextView
+        android:id="@+id/dialog_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:padding="20dp"
+        android:text="SORT BY"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:font_name="bold" />
+
+
+</RelativeLayout>

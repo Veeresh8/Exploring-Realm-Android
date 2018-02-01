@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEE"
+    tools:context="veeresh.a3c.realm.ui.DetailsActivity">
+
+    <RelativeLayout
+        android:id="@+id/about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="150dp"
+            android:layout_margin="15dp"
+            android:layout_height="200dp"
+            android:transitionName="source"
+            android:src="@mipmap/ic_launcher" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_toEndOf="@+id/profile_picture"
+            android:layout_toRightOf="@+id/profile_picture"
+            android:clickable="true"
+            android:layout_margin="10dp"
+            android:elevation="4dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <veeresh.a3c.realm.utilities.MyCustomTextView
+                    android:id="@+id/batsman_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_account_circle_blue_grey_800_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_account_circle_blue_grey_800_24dp"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    app:font_name="bold"
+                    tools:text="Veeresh Charantimath" />
+
+                <veeresh.a3c.realm.utilities.MyCustomTextView
+                    android:id="@+id/country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_account_balance_blue_grey_800_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_account_balance_blue_grey_800_24dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    app:font_name="semibold"
+                    tools:text="India" />
+
+
+                <veeresh.a3c.realm.utilities.MyCustomTextView
+                    android:id="@+id/runs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_whatshot_blue_grey_800_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_whatshot_blue_grey_800_24dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    app:font_name="semibold"
+                    tools:text="Runs" />
+
+
+                <veeresh.a3c.realm.utilities.MyCustomTextView
+                    android:id="@+id/matches"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_poll_blue_grey_800_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_poll_blue_grey_800_24dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    app:font_name="semibold"
+                    tools:text="Matches" />
+
+
+                <veeresh.a3c.realm.utilities.MyCustomTextView
+                    android:id="@+id/fav_player"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_favorite_blue_grey_800_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_favorite_blue_grey_800_24dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    app:font_name="semibold"
+                    android:text="My Favorite" />
+
+
+
+
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/desc_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/about_layout">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <veeresh.a3c.realm.utilities.MyCustomTextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="10dp"
+                    android:textColor="@android:color/black"
+                    app:font_name="semibold"
+                    tools:text="Abraham Benjamin de Villiers (born 17 February 1984) is a South African cricketer who currently captains the South African One Day International (ODI) team. He is also a former captain in T20I and Test cricket for South Africa. De Villiers is regarded as one of the greatest cricketers of all time and a legend in the modern cricket world.De Villiers holds many batting records, including world's fastest 50, 100 and 150 in ODI cricket, the fastest Test century by a South African and the fastest T20I 50 by a South African. His match winning ability and lethal innings across all formats rated him as number one batsman in several occasions." />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc_layout">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:clickable="true"
+            android:elevation="4dp"
+            android:foreground="?android:attr/selectableItemBackground">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <veeresh.a3c.realm.utilities.MyCustomTextView
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_share_blue_grey_800_24dp"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/ic_share_blue_grey_800_24dp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Share"
+                    android:textColor="@android:color/black"
+                    app:font_name="semibold" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+</RelativeLayout>
